@@ -8,9 +8,6 @@ services:
         context: ./../../Nodes/Plan
         dockerfile: ./Dockerfile
     container_name: C_Plan
-    depends_on:
-        emqx-enterprise:
-            condition: service_healthy
 
   execute:
     build:
